@@ -23,7 +23,12 @@ class EmailAuthenticationForm(AuthenticationForm):
     def __init__(self, request=None, *args, **kwargs):
         super(EmailAuthenticationForm, self).__init__(request, *args, **kwargs)
         del self.fields['username']
-        self.fields.keyOrder = ['email', 'password']
+        if hasattr(self.fields, 'keyOrder'):   # Django <=1.6
+            self.fields.keyOrder = ['email', 'password']
+        else:   # Django >= 1.7
+            # reinsert 'password' field to move it to the end of the form.fields OrderedDict
+            password_field = self.fields.pop('password')
+            self.fields['password'] = password_field
 
     def clean(self):
         email = self.cleaned_data.get('email')
