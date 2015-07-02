@@ -14,3 +14,5 @@ INSTALLED_APPS = (
 AUTHENTICATION_BACKENDS = (
     'emailusernames.backends.EmailAuthBackend',
 )
+
+SECRET_KEY = 'derpalittlederp'

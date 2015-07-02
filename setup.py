@@ -40,11 +40,11 @@ def get_package_data(root):
 
 
 setup(
-    name='django-email-as-username',
+    name='django-1.7plus-email-as-username',
     version=version,
     description='User authentication with email addresses instead of usernames.',
-    author='Tom Christie',
-    url='https://github.com/dabapps/django-email-as-username',
+    author='Tom Christie, et al.',
+    url='https://github.com/pconerly/django-1.7plus-email-as-username',
     packages=get_packages('emailusernames'),
     package_data=get_package_data('emailusernames'),
     license='BSD',

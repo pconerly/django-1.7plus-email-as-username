@@ -13,6 +13,9 @@ Django Email as Username
 
 **Note**: As of Django 1.5 onwards you should consider using a [custom user model][docs] rather than using the `django-email-as-username` package.  We are no longer accepting pull requests and issues against this package.
 
+
+**Note**: To handle a nasty migration of a legacy django app, @pconerly is adding support for django1.7 & django1.8, mostly by finding other people's forks.
+
 ---
 
 Overview
@@ -385,6 +388,6 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 [django-email-login]: https://bitbucket.org/tino/django-email-login
 [django-email-usernames]: https://bitbucket.org/hakanw/django-email-usernames
 [django-user-accounts]: https://github.com/pinax/django-user-accounts/
-[travis]: http://travis-ci.org/tomchristie/django-email-as-username?branch=master
+[travis]: https://travis-ci.org/pconerly/django-1.7plus-email-as-username.svg?branch=master
 [build-status-image]: https://secure.travis-ci.org/dabapps/django-email-as-username.png
 [docs]: https://docs.djangoproject.com/en/dev/topics/auth/customizing/#auth-custom-user
