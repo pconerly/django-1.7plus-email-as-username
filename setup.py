@@ -44,6 +44,7 @@ setup(
     version=version,
     description='User authentication with email addresses instead of usernames.',
     author='Tom Christie, et al.',
+    author_name='null',
     url='https://github.com/pconerly/django-1.7plus-email-as-username',
     packages=get_packages('emailusernames'),
     package_data=get_package_data('emailusernames'),
